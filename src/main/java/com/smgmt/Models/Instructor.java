@@ -2,9 +2,13 @@ package com.smgmt.Models;
 
 import com.smgmt.Handlers.Generate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
+@Entity
+@Table(name = "Designated Instructors")
 public class Instructor
 {
     private String ID;

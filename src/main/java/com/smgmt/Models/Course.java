@@ -2,9 +2,13 @@ package com.smgmt.Models;
 
 import com.smgmt.Handlers.Generate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
+@Entity
+@Table(name = "Available Courses")
 public class Course
 {
     private String ID;

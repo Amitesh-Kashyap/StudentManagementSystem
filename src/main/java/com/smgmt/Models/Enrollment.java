@@ -1,9 +1,13 @@
 package com.smgmt.Models;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.Data;
 
 @Data
+@Entity
+@Table(name = "Enrollments Upto Date")
 public class Enrollment
 {
     private String ID;
