@@ -13,5 +13,7 @@ public interface EnrollmentDB extends JpaRepository<Enrollment , Integer>
     Optional<Enrollment> findByName(String courseName);
     List<Course> saveAll(List<Course> courses_array);
     void deleteByName(String name);
+
+    Optional<Enrollment> findById(String ID);
     
 }

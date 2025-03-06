@@ -11,5 +11,8 @@ public interface StudentDB extends JpaRepository<Student , Integer>
 {
     Optional<Student> findByName(String name);
     List<Student> saveAll(List<Student> students_array);
-    void deleteByName(String name);    
+    void deleteByName(String name);
+    // In CRUD Repo, findById takes integer ID but we have taken it to be String
+    // Hence, we defined another function
+    Optional<Student> findById(String ID);
 }

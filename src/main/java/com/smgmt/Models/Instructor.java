@@ -3,6 +3,7 @@ package com.smgmt.Models;
 import com.smgmt.Handlers.Generate;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
 
@@ -11,6 +12,7 @@ import lombok.Data;
 @Table(name = "Designated Instructors")
 public class Instructor
 {
+    @Id
     private String ID;
     private String name;
     private String email;

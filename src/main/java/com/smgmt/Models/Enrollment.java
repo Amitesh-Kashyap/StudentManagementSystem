@@ -1,6 +1,7 @@
 package com.smgmt.Models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
@@ -10,6 +11,7 @@ import lombok.Data;
 @Table(name = "Enrollments Upto Date")
 public class Enrollment
 {
+    @Id
     private String ID;
     @ManyToOne
     private Student student;
